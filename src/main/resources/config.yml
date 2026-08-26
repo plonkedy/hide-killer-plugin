@@ -1,0 +1,23 @@
+# =========================================
+# HideKiller Configuration
+# =========================================
+
+# What to show instead of the killer's real username.
+replacement-name: "a mysterious figure"
+
+# The death message format shown to everyone.
+# Placeholders:
+#   %victim%  - the player who died
+#   %killer%  - replaced with 'replacement-name' above
+# Supports MiniMessage color/formatting tags, e.g. <red>, <bold>, <gradient:...>
+message-format: "<white>%victim%</white> was slain by <red>%killer%</red>"
+
+# If true, only death messages caused by another PLAYER are anonymized.
+# Deaths from mobs, fall damage, lava, etc. keep the normal vanilla message.
+# If false, the killer's name is hidden even if killed indirectly by a
+# player (e.g. via a summoned wolf, TNT, or arrow left in the world),
+# using the same replacement message whenever a killer can be identified.
+hide-for-player-kills-only: true
+
+# If true, prints a debug line to console every time a death message is modified.
+debug: false

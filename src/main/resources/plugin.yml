@@ -1,0 +1,17 @@
+name: HideKiller
+version: '1.0.0'
+main: net.yoursite.hidekiller.HideKillerPlugin
+api-version: '1.21'
+author: YourName
+description: Hides the killer's name in death messages, regardless of how the kill happened.
+
+commands:
+  hidekiller:
+    description: Reload the HideKiller configuration
+    usage: /hidekiller reload
+    permission: hidekiller.admin
+
+permissions:
+  hidekiller.admin:
+    description: Allows reloading HideKiller's config
+    default: op

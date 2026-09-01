@@ -30,7 +30,7 @@ public class HideKillerPlugin extends JavaPlugin implements Listener {
         replacementName = getConfig().getString("replacement-name", "a mysterious figure");
         messageFormat = getConfig().getString(
                 "message-format",
-                "<white>%victim%</white> was slain by <red>%killer%</red>"
+                "<red>%victim% has died"
         );
         hideForPlayerKillsOnly = getConfig().getBoolean("hide-for-player-kills-only", true);
         debug = getConfig().getBoolean("debug", false);
